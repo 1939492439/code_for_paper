@@ -1,6 +1,6 @@
 # code_for_paper
 This part of the code is my thesis code written in 2021.  Contains GEE code and matable code.  
-All codes have source code links in the first line, which are commented out in the first line. The realization of the whole paper includes MATLAB code and GEE code, which is JS code and needs to be run on the Web side.  
+All codes have source code links in the first line, which are commented out in the first line. The realization of the whole paper includes MATLAB code and GEE code, which is JS code and needs to be run on the Web side.The following is the source link, but it may fail if time passes too long.  But for now it works, and all the code has corresponding files.    
 
 Time series generation code
 https://code.earthengine.google.com/c4b4d403930f1f4571e2a29ea17e22c6
