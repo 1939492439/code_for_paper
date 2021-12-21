@@ -11,6 +11,7 @@
     shaobing2 = ee.ImageCollection("COPERNICUS/S2_SR"),
     minhe = ee.FeatureCollection("users/103b6051/minhe_2019_shnag_chuan");
  
+ Map.centerObject(bianjie)
  
 function ndpi(image){  var nd = image.expression('(nir-(0.74*r+(1-0.74)*swir))/(nir+(0.74*r+(1-0.74)*swir))',
                                                       {'nir':image.select("B8"),
@@ -43,7 +44,7 @@ var date=[]
 var time_start='2019-08-25'  //SG滤波会剔除边缘数据，因此需额外多四期，前后各两期
 var time_end
 for(var i=0;i<34;i++){
-  time_end=dateAddDays(time_start,10)
+  time_end=dateAddDays(time_start,20)
   date.push([time_start,time_end])
   time_start=time_end }
   print('日期',date)
